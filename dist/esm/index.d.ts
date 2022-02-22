@@ -1,4 +1,4 @@
-import type { FacebookAnalyticsPlugin } from './definitions';
+import { FacebookAnalyticsPlugin } from './definitions';
 declare const FacebookAnalytics: FacebookAnalyticsPlugin;
 export * from './definitions';
 export { FacebookAnalytics };
