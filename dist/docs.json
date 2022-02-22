@@ -6,6 +6,16 @@
     "tags": [],
     "methods": [
       {
+        "name": "initAppEvents",
+        "signature": "() => Promise<string>",
+        "parameters": [],
+        "returns": "Promise<string>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "initappevents"
+      },
+      {
         "name": "logEvent",
         "signature": "(options: { event: string; valueToSum?: number; params?: any; }) => Promise<string>",
         "parameters": [

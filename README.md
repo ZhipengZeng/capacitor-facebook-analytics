@@ -13,12 +13,24 @@ npx cap sync
 
 <docgen-index>
 
+* [`initAppEvents()`](#initappevents)
 * [`logEvent(...)`](#logevent)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### initAppEvents()
+
+```typescript
+initAppEvents() => Promise<string>
+```
+
+**Returns:** <code>Promise&lt;string&gt;</code>
+
+--------------------
+
 
 ### logEvent(...)
 

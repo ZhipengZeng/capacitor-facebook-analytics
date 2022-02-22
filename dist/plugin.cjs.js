@@ -15,6 +15,9 @@ class FacebookAnalyticsWeb extends core.WebPlugin {
             platforms: ['web'],
         });
     }
+    initAppEvents() {
+        throw super.unimplemented();
+    }
     logEvent(_) {
         throw super.unimplemented();
     }

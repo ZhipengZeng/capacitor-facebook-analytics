@@ -13,6 +13,10 @@ export class FacebookAnalyticsWeb
     });
   }
 
+  initAppEvents(): Promise<string> {
+    throw super.unimplemented();
+  }
+
   logEvent(_: { event: string, valueToSum?: number, params?: any }): Promise<string> {
     throw super.unimplemented();
   }

@@ -12,6 +12,9 @@ var capacitorFacebookAnalytics = (function (exports, core) {
                 platforms: ['web'],
             });
         }
+        initAppEvents() {
+            throw super.unimplemented();
+        }
         logEvent(_) {
             throw super.unimplemented();
         }
