@@ -8,14 +8,6 @@ import FBSDKCoreKit
  */
 @objc(FacebookAnalyticsPlugin)
 public class FacebookAnalyticsPlugin: CAPPlugin {
-//    private let implementation = FacebookAnalytics()
-//
-//    @objc func echo(_ call: CAPPluginCall) {
-//        let value = call.getString("value") ?? ""
-//        call.resolve([
-//            "value": implementation.echo(value)
-//        ])
-//    }
     
     @objc func initAppEvents(_ call: CAPPluginCall) {
         AppEvents.shared.activateApp()
@@ -31,14 +23,22 @@ public class FacebookAnalyticsPlugin: CAPPlugin {
         print(event)
 
         if let valueToSum = call.getDouble("valueToSum") {
-            if let params = call.getObject("params") {
-                AppEvents.shared.logEvent(.init(event), valueToSum: valueToSum)
+            if let params = call.getString("params") {
+                print(params)
+                let newParams = [
+                    AppEvents.ParameterName.content : params,
+                ]
+                AppEvents.shared.logEvent(.init(event), valueToSum: valueToSum, parameters: newParams)
             } else {
                 AppEvents.shared.logEvent(.init(event), valueToSum: valueToSum)
             }
         } else {
-            if let params = call.getObject("params") {
-                AppEvents.shared.logEvent(.init(event))
+            if let params = call.getString("params") {
+                print(params)
+                let newParams = [
+                    AppEvents.ParameterName.content : params,
+                ]
+                AppEvents.shared.logEvent(.init(event), parameters: newParams)
             } else {
                 AppEvents.shared.logEvent(.init(event))
             }
