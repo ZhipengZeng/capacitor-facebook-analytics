@@ -1,0 +1,1 @@
+{"version":3,"file":"definitions.js","sourceRoot":"","sources":["../../src/definitions.ts"],"names":[],"mappings":"","sourcesContent":["export interface FacebookAnalyticsPlugin {\n  logEvent(options: { event: string, valueToSum?: number, params?: any }): Promise<string>;\n}\n"]}

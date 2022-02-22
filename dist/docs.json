@@ -1,0 +1,31 @@
+{
+  "api": {
+    "name": "FacebookAnalyticsPlugin",
+    "slug": "facebookanalyticsplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "logEvent",
+        "signature": "(options: { event: string; valueToSum?: number; params?: any; }) => Promise<string>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ event: string; valueToSum?: number | undefined; params?: any; }"
+          }
+        ],
+        "returns": "Promise<string>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "logevent"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
