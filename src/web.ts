@@ -1,12 +1,19 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { FacebookAnalyticsPlugin } from './definitions';
+import { FacebookAnalyticsPlugin } from './definitions';
 
 export class FacebookAnalyticsWeb
   extends WebPlugin
   implements FacebookAnalyticsPlugin {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+
+  constructor() {
+    super({
+      name: 'FacebookAnalytics',
+      platforms: ['web'],
+    });
+  }
+
+  logEvent(_: { event: string, valueToSum?: number, params?: any }): Promise<string> {
+    throw super.unimplemented();
   }
 }

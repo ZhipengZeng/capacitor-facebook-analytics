@@ -1,6 +1,6 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { FacebookAnalyticsPlugin } from './definitions';
+import { FacebookAnalyticsPlugin } from './definitions';
 
 const FacebookAnalytics = registerPlugin<FacebookAnalyticsPlugin>(
   'FacebookAnalytics',

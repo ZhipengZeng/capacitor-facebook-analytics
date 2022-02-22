@@ -1,3 +1,3 @@
 export interface FacebookAnalyticsPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  logEvent(options: { event: string, valueToSum?: number, params?: any }): Promise<string>;
 }
