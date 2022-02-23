@@ -1,6 +1,6 @@
 {
   "name": "capacitor-facebook-analytics",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "this is a capacitor 3 plugin for facebook analytics",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
