@@ -20,4 +20,16 @@ export class FacebookAnalyticsWeb
   logEvent(_: { event: string, valueToSum?: number, params?: any }): Promise<string> {
     throw super.unimplemented();
   }
+
+  enableAdvertiserTracking(): Promise<any> {
+    throw super.unimplemented();
+  }
+  
+  disableAdvertiserTracking(): Promise<any> {
+    throw super.unimplemented();
+  }
+
+  getAdvertiserTrackingStatus(): Promise<any> {
+    throw super.unimplemented();
+  }
 }
