@@ -12,5 +12,14 @@ export class FacebookAnalyticsWeb extends WebPlugin {
     logEvent(_) {
         throw super.unimplemented();
     }
+    enableAdvertiserTracking() {
+        throw super.unimplemented();
+    }
+    disableAdvertiserTracking() {
+        throw super.unimplemented();
+    }
+    getAdvertiserTrackingStatus() {
+        throw super.unimplemented();
+    }
 }
 //# sourceMappingURL=web.js.map

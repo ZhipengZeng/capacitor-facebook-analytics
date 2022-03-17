@@ -30,6 +30,36 @@
         "docs": "",
         "complexTypes": [],
         "slug": "logevent"
+      },
+      {
+        "name": "enableAdvertiserTracking",
+        "signature": "() => Promise<any>",
+        "parameters": [],
+        "returns": "Promise<any>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "enableadvertisertracking"
+      },
+      {
+        "name": "disableAdvertiserTracking",
+        "signature": "() => Promise<any>",
+        "parameters": [],
+        "returns": "Promise<any>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "disableadvertisertracking"
+      },
+      {
+        "name": "getAdvertiserTrackingStatus",
+        "signature": "() => Promise<any>",
+        "parameters": [],
+        "returns": "Promise<any>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "getadvertisertrackingstatus"
       }
     ],
     "properties": []

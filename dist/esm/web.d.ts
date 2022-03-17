@@ -8,4 +8,7 @@ export declare class FacebookAnalyticsWeb extends WebPlugin implements FacebookA
         valueToSum?: number;
         params?: any;
     }): Promise<string>;
+    enableAdvertiserTracking(): Promise<any>;
+    disableAdvertiserTracking(): Promise<any>;
+    getAdvertiserTrackingStatus(): Promise<any>;
 }

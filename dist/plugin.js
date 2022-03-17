@@ -18,6 +18,15 @@ var capacitorFacebookAnalytics = (function (exports, core) {
         logEvent(_) {
             throw super.unimplemented();
         }
+        enableAdvertiserTracking() {
+            throw super.unimplemented();
+        }
+        disableAdvertiserTracking() {
+            throw super.unimplemented();
+        }
+        getAdvertiserTrackingStatus() {
+            throw super.unimplemented();
+        }
     }
 
     var web = /*#__PURE__*/Object.freeze({

@@ -5,4 +5,7 @@ export interface FacebookAnalyticsPlugin {
         valueToSum?: number;
         params?: any;
     }): Promise<string>;
+    enableAdvertiserTracking(): Promise<any>;
+    disableAdvertiserTracking(): Promise<any>;
+    getAdvertiserTrackingStatus(): Promise<any>;
 }

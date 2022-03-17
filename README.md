@@ -15,6 +15,9 @@ npx cap sync
 
 * [`initAppEvents()`](#initappevents)
 * [`logEvent(...)`](#logevent)
+* [`enableAdvertiserTracking()`](#enableadvertisertracking)
+* [`disableAdvertiserTracking()`](#disableadvertisertracking)
+* [`getAdvertiserTrackingStatus()`](#getadvertisertrackingstatus)
 
 </docgen-index>
 
@@ -43,6 +46,39 @@ logEvent(options: { event: string; valueToSum?: number; params?: any; }) => Prom
 | **`options`** | <code>{ event: string; valueToSum?: number; params?: any; }</code> |
 
 **Returns:** <code>Promise&lt;string&gt;</code>
+
+--------------------
+
+
+### enableAdvertiserTracking()
+
+```typescript
+enableAdvertiserTracking() => Promise<any>
+```
+
+**Returns:** <code>Promise&lt;any&gt;</code>
+
+--------------------
+
+
+### disableAdvertiserTracking()
+
+```typescript
+disableAdvertiserTracking() => Promise<any>
+```
+
+**Returns:** <code>Promise&lt;any&gt;</code>
+
+--------------------
+
+
+### getAdvertiserTrackingStatus()
+
+```typescript
+getAdvertiserTrackingStatus() => Promise<any>
+```
+
+**Returns:** <code>Promise&lt;any&gt;</code>
 
 --------------------
 
