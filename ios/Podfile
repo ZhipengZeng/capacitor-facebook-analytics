@@ -10,7 +10,7 @@ end
 target 'Plugin' do
   capacitor_pods
   pod 'FacebookSDK'
-  pod 'FBSDKCoreKit', '~>12.3.2'
+  pod 'FBSDKCoreKit', '~>13.0.0'
 end
 
 target 'PluginTests' do
